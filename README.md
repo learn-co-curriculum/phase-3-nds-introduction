@@ -1,10 +1,11 @@
 ## Programming as Collaboration: Nested Data Structures Introduction
 
 Welcome to "Programming as Collaboration." We're going to learn to use the
-programming skills we know to work with nested data structures (NDS). "Nested"
-means "complex" because we're talking about structures (`Array`s, `Hash`es)
-that contain _other_ structures (`Array`s, `Hash`es). A very simple "nested"
-data structure is an "Array of Arrays`:
+programming skills we know to work with _nested data structures_ (NDS).
+
+"Nested" means "complex" because we're talking about structures (`Array`s,
+`Hash`es) that contain _other_ structures (`Array`s, `Hash`es). A very simple
+"nested" data structure is an "Array of Arrays`:
 
 ```ruby
 array_of_arrays = [ # containing Array (of Array)
@@ -13,52 +14,61 @@ array_of_arrays = [ # containing Array (of Array)
 ]
 ```
 
+Let's try to describe what's going on here in English:
+
 > "The `Array` called `array_of_arrays` has two elements. One element is an
 > `Array` containing 3 elements. Those elements are the first odd numbers greater
 > than `0`. The other element in `array_of_arrays` contains 3 elements that are
 > the first even numbers greater than 0."
 
-Let's use this introduction to help us identify four reasons of why nested data
-structures are important to understand.
+Let's use this introduction to help us identify **four** reasons of why nested
+data structures are important to understand.
 
 ## Nested Data Structures Are Easier for Humans to Understand
 
-Look back up at the inset section of text. Is that _fun_ to read? Not really.
-To be _precise_, it becomes very hard to follow. Or imagine someone wants to
-communicate about agricultural output in South America. Or imagine someone
-wants to talk about the different sales levels of seven of your employer's
-products in China. Would a big paragraph be what **you** want to read?
+Let's review our precise description of what's in the `Array`:
 
-For humans, the answer is universally "no." Daniel Kahnemann in his book
-_Thinking Fast and Slow_ discusses this at length. The human animal doesn't
-like to think methodically (like a computer). A paragraph like the inset one
-one above, is excruciating for humans and we, do a bad job. We want to skip
-sentences, we skip ahead, etc. We might have to take notes, or track the words
-with a pencil to keep our focus.
+> "The `Array` called `array_of_arrays` has two elements. One element is an
+> `Array` containing 3 elements. Those elements are the first odd numbers greater
+> than `0`. The other element in `array_of_arrays` contains 3 elements that are
+> the first even numbers greater than 0."
 
-However, the code sample, provided you understand `Array` literal syntax, is
-easy to read. Our human brains love it. It uses space and pattern to
-communicate both the content inside, but some implicit rules (_In this `Array`
-there are `Array`s. It seems like most inner `Array`s have three elements._).
+Is that _fun_ to read? Not really. Is it easy to think about? Imagine what the
+paragraph to describe agricultural output of South America looks like.  Humans
+long ago learned that reading paragraphs like this is not a real strength of
+ours (Daniel Kahnemann in his book _Thinking Fast and Slow_ discusses this at
+length.).
 
-The best part of nested data structures is that that they enable human
-communication much better than text. So, for that meeting about agricultural
-output, we'd recommend you to use a _table_. For the product mix in China
-presentation, we recommend a _pie chart_. This will help the human-to-human
-communication.
+The human animal doesn't like to think methodically (like a computer). When we
+encounter complex paragraphs we skip sentences, we skip ahead, etc.  We might
+have to take notes, or track the words with a pencil to keep our focus.
+
+Humans have learned that we can share information like this far better in a bar
+chart, a line graph, or a pie chart. Economic outputs are perfect for _tables_.
+
+Unfortunately, computers don't understand pie charts. But if we structure our
+data in NDS', we can get something that's easier for humans to read **and**
+that the computer can work with.
+
+Provided you understand `Array` literal syntax, your brain loves seeing data in
+this visually rhythmic way.  It uses space and pattern to communicate both the
+content inside, as well as describe some  rules (_In this `Array` there are
+`Array`s. It seems like most inner `Array`s have three elements._).
+
+For clarity in thinking and communicating, working with NDS' is a vital skill.
 
 ## Nested Data Structures Are Usable by Computers
 
-A computer can't work with a pie chart or a table. The closes approximation it
-can work with is a nested data structure. So NDS make it _easier_ for humans to
-understand complex data, but they're the _only_ way a computer can understand
-complex data.
+We said it before, but a computer can't work with a pie chart or a table. The
+closes approximation it can work with is a nested data structure. So NDS make
+it _easier_ for humans to understand complex data, but they're the _only_ way a
+computer can understand complex data.
 
 ## Nested Data Structures Are Transformed to Produce Insight
 
 Early (1940s-1980s) programmers pretty much had one job description:
 
-> "Take a bunch of raw data and put out a re-organized version of it, or do a
+> "Take a bunch of raw data and output a re-organized version of it, or do a
 > calculation from all of it."
 
 In fact, the complex world of programming was often housed in a department
@@ -67,7 +77,7 @@ called "data processing."
 Imagine you're back in that early era of "data processing." Let's now suppose
 someone asks us to:
 
-> Get the element in the `1` index for all the nessted data.
+> Get the element in the `1` index for all the nested data.
 
 Thanks to the human-brain-friendly nested structure, we can look at the code
 and pretty quickly come up with `[3, 4]`. Since we know what the result should
@@ -125,11 +135,11 @@ low_high_totals = [
 ]
 
 p low_high_totals #=> [3000, 11000]
+p low_high_totals[1] - low_high_totals[1] #=> 8000
 ```
 
 Wow! A difference of $8,000! The ability to take a nested structure and
-transform is to produce insight is how most programmers of yesterday and many
-of today justify their salaries!
+transform is to produce insight is how many programmers justify their salaries!
 
 ## Nested Data Are Provided By Others for Us to Use
 
@@ -141,8 +151,8 @@ your code can contact that returns....you guessed it...a nested data structure.
 Obviously, the data at Amazon is not curated by Jeff Bezos for the benefit of
 _my_ program. The latitude / longitude data of all the coffee shops near my
 iPhone's current location are not curated for the benefit of my program by Tim
-Cook. The information about my GitHub repositories is not curated by Nat
-Friedman for the benefit of _my_ program. The returned NDS _might_ have the
+Cook and Apple. The information about my GitHub repositories is not curated by
+Nat Friedman for the benefit of _my_ program. The returned NDS _might_ have the
 data I need. But oftentimes, we need to transform this provided data in order
 to get the insights we need.
 
@@ -163,11 +173,6 @@ to _collaborate_ with the computer. We're going to come up programs that take
 complex data and get it closer and closer to our answer....before finally
 giving us our answer. Much of the work in this module is in the
 _transformation_ in order to get the answer.
-
-Like life, when you're old enough to see how complex it is, getting a simple
-answer is rare and sometimes how to get a murky answer is hard enough.
-Computers can help do the data processing, but ultimately it's up to us to make
-the final call.
 
 The remainder of this module will train up our skill in working with NDS with
 the collaboration of a computer to produce insight.
