@@ -5,7 +5,7 @@ programming skills we know to work with _nested data structures_ (NDS).
 
 "Nested" means "complex" because we're talking about structures (`Array`s,
 `Hash`es) that contain _other_ structures (`Array`s, `Hash`es). A very simple
-"nested" data structure is an "Array of Arrays`:
+"nested" data structure is an "`Array` of `Array`s:"
 
 ```ruby
 array_of_arrays = [ # containing Array (of Array)
