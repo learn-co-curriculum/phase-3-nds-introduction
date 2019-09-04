@@ -14,19 +14,27 @@ array_of_arrays = [ # containing Array (of Array)
 ]
 ```
 
-Let's try to describe what's going on here in English:
+If you're familiar with `Array` literals, then this probably merits only a
+shrug of the shoulders. It's fair to ask: "So what?" Remember that one of 
+the core activities of a programmer is to _model_ the world so that our programs
+can work on those models and provide us humans _insights_: who is the best 
+quarterback, which investment should we make, how many recipes use "flour" as
+an ingredient? In order the build models to answer these questions, we're going
+to need to model complex data sets ("Proctor and Gambles Soaps", "All World
+Cup Cricketers Since 1900").
 
-> "The `Array` called `array_of_arrays` has two elements. One element is an
-> `Array` containing 3 elements. Those elements are the first odd numbers greater
-> than `0`. The other element in `array_of_arrays` contains 3 elements that are
-> the first even numbers greater than 0."
-
-Let's use this introduction to help us identify **four** reasons of why nested
-data structures are important to understand.
+Ultimately nested data structures allow us to model complex data in a way that
+humans understand **and** that computers can speedily process. In the rest of this
+lesson, we're going to talk about some of the specifics around how NDS' fulfill
+this goal.
 
 ## Nested Data Structures Are Easier for Humans to Understand
 
-Let's review our precise description of what's in the `Array`:
+Can you describe the nested `Array` above in English?
+
+Try it yourself before you try ours.
+
+Tried it? OK, here's our attempt:
 
 > "The `Array` called `array_of_arrays` has two elements. One element is an
 > `Array` containing 3 elements. Those elements are the first odd numbers greater
@@ -51,7 +59,7 @@ data in NDS', we can get something that's easier for humans to read **and**
 that the computer can work with.
 
 Provided you understand `Array` literal syntax, your brain loves seeing data in
-this visually rhythmic way.  It uses space and pattern to communicate both the
+this visually "rhythmic" way.  The NDS uses space and pattern to communicate _both_ the
 content inside, as well as describe some  rules (_In this `Array` there are
 `Array`s. It seems like most inner `Array`s have three elements._).
 
@@ -81,7 +89,7 @@ someone asks us to:
 
 Thanks to the human-brain-friendly nested structure, we can look at the code
 and pretty quickly come up with `[3, 4]`. Since we know what the result should
-be thanks to "eyeballing it," coding this solution is simple as well:
+be thanks to "eyeballing it," coding this solution can be verified quickly:
 
 ```ruby
 array_of_arrays = [ # containing Array (of Array)
@@ -103,9 +111,7 @@ find_firsts(array_of_arrays) #=> [3, 4]
 OK, we admit, determining the second odd or even number greater than zero isn't
 _that_ exciting. But what if each of these inner `Array`s represented three
 estimates, sorted least-to-most on remodeling two different rooms of your
-house?
-
-Suddenly things are much more exciting:
+house? Suddenly this _exact same_ algorithm is much more exciting:
 
 ```ruby
 array_of_bid_arrays = [ # containing Array (of Array)
@@ -162,17 +168,8 @@ As we've seen in this lesson, nested data structures are a tool for
 representing complex information in a way that humans can read and that
 computers can process. Using simple tools like expressions, statements,
 methods, `Array` manipulation commands, and `Hash` manipulation commands, we
-can transform NDS that we create or get from somewhere else in a way to produce
+can transform NDS' that we create or get from somewhere else in a way to produce
 insight in a way that creates real value.
-
-We call this module "Programming as Collaboration." These data are too complex
-to work with in the way we might say "I want a cookie." These are data like
-"Given the last 10 years of rainfall in Peru, I want to examine the correlation
-between rainfall there and quinoa prices in Los Angeles." As such, we're going
-to _collaborate_ with the computer. We're going to come up programs that take
-complex data and get it closer and closer to our answer....before finally
-giving us our answer. Much of the work in this module is in the
-_transformation_ in order to get the answer.
 
 The remainder of this module will train up our skill in working with NDS with
 the collaboration of a computer to produce insight.
