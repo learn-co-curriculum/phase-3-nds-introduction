@@ -14,14 +14,19 @@ array_of_arrays = [ # containing Array (of Array)
 ]
 ```
 
-If you're familiar with `Array` literals, then this probably merits only a
-shrug of the shoulders. It's fair to ask: "So what?" Remember that one of 
-the core activities of a programmer is to _model_ the world so that our programs
-can work on those models and provide us humans _insights_: who is the best 
-quarterback, which investment should we make, how many recipes use "flour" as
-an ingredient? In order the build models to answer these questions, we're going
-to need to model complex data sets ("Proctor and Gambles Inc.'s Soaps", "All World
-Cup Cricketers Since 1900").
+One of 
+the core activities of a programmer is to _model_ initial data sets
+so that our programs
+can work on them to produce _insights_.
+
+To answer:
+
+* Who is the best quarterback in the NFL, we need the data set of all NFL quarterbacks
+* Which investment property will likely to sell for a profit in 5 years, we need real estate data in our town
+* How many recipes use "flour" as an ingredient, we need all the recipes in our cookbook?
+
+In each of these cases to generate insight or answer a difficult question, we need
+to need to model complex data sets as NDS' so that Ruby can work with them.
 
 Ultimately nested data structures allow us to model complex data in a way that
 humans understand **and** that computers can speedily process. In the rest of this
@@ -41,15 +46,20 @@ Tried it? OK, here's our attempt:
 > than `0`. The other element in `array_of_arrays` contains 3 elements that are
 > the first even numbers greater than 0."
 
-Is that _fun_ to read? Not really. Is it easy to think about? Imagine what the
-paragraph to describe agricultural output of South America looks like.  Humans
-long ago learned that reading paragraphs like this is not a real strength of
+Is that _fun_ to read? Not really. Is it easy to think about? Not really.
+
+Now, imagine what the
+paragraph to describe agricultural output of South America looks like.  It makes
+us want to run away screaming.
+
+Humans
+learned long ago  that reading complex paragraphs like those is **not** a real strength of
 ours (Daniel Kahnemann in his book _Thinking Fast and Slow_ discusses this at
 length.).
 
 The human animal doesn't like to think methodically (like a computer). When we
-encounter complex paragraphs we skip sentences, we skip ahead, etc.  We might
-have to take notes, or track the words with a pencil to keep our focus.
+encounter complex paragraphs we skip sentences, we look ahead, etc.  We might
+even have to take notes, or track the words with a pencil to keep our focus.
 
 Humans have learned that we can share information like this far better in a bar
 chart, a line graph, or a pie chart. Economic outputs are perfect for _tables_.
@@ -68,7 +78,7 @@ For clarity in thinking and communicating, working with NDS' is a vital skill.
 ## Nested Data Structures Are Usable by Computers
 
 We said it before, but a computer can't work with a pie chart or a table. The
-closest approximation it can work with is a nested data structure. So NDS make
+closest approximation it can work with is a nested data structure. So NDS' make
 it _easier_ for humans to understand complex data, but they're the _only_ way a
 computer can understand complex data.
 
@@ -151,11 +161,11 @@ transform is to produce insight is how many programmers justify their salaries!
 
 As you learn more about software development, you'll want to get data from
 other sources to produce insights. Typically companies make this information
-available through an "API." For the time being think of an API as a URL which
+available through an "API." For the time being, think of an API as a URL which
 your code can contact that returns....you guessed it...a nested data structure.
 
 Obviously, the data at Amazon is not curated by Jeff Bezos for the benefit of
-_my_ program. The latitude / longitude data of all the coffee shops near my
+_my_ program. The latitude/longitude data of all the coffee shops near my
 iPhone's current location are not curated for the benefit of my program by Tim
 Cook and Apple. The information about my GitHub repositories is not curated by
 Nat Friedman for the benefit of _my_ program. The returned NDS _might_ have the
@@ -169,7 +179,7 @@ representing complex information in a way that humans can read and that
 computers can process. Using simple tools like expressions, statements,
 methods, `Array` manipulation commands, and `Hash` manipulation commands, we
 can transform NDS' that we create or get from somewhere else in a way to produce
-insight in a way that creates real value.
+insight.
 
 The remainder of this module will train up our skill in working with NDS with
 the collaboration of a computer to produce insight.
