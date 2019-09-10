@@ -59,7 +59,7 @@ data in NDS', we can get something that's easier for humans to read **and**
 that the computer can work with.
 
 Provided you understand `Array` literal syntax, your brain loves seeing data in
-this visually "rhythmic" way.  The NDS uses space and pattern to communicate _both_ the
+this visually "rhythmic" way.  The NDS uses space and patterns to communicate _both_ the
 content inside, as well as describe some  rules (_In this `Array` there are
 `Array`s. It seems like most inner `Array`s have three elements._).
 
@@ -68,7 +68,7 @@ For clarity in thinking and communicating, working with NDS' is a vital skill.
 ## Nested Data Structures Are Usable by Computers
 
 We said it before, but a computer can't work with a pie chart or a table. The
-closes approximation it can work with is a nested data structure. So NDS make
+closest approximation it can work with is a nested data structure. So NDS make
 it _easier_ for humans to understand complex data, but they're the _only_ way a
 computer can understand complex data.
 
