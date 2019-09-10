@@ -20,7 +20,7 @@ the core activities of a programmer is to _model_ the world so that our programs
 can work on those models and provide us humans _insights_: who is the best 
 quarterback, which investment should we make, how many recipes use "flour" as
 an ingredient? In order the build models to answer these questions, we're going
-to need to model complex data sets ("Proctor and Gambles Soaps", "All World
+to need to model complex data sets ("Proctor and Gambles Inc.'s Soaps", "All World
 Cup Cricketers Since 1900").
 
 Ultimately nested data structures allow us to model complex data in a way that
