@@ -77,6 +77,14 @@ next several lessons are:
 * `Hash` of `Array`s (HoA)
 * `Hash` of `Hash`es (HoH)
 
+While you might have seen these nested data structures before, these lessons
+use more technical and more precise language to describe them. Additionally, we
+discuss them with focus on how we are going to process them. Based on our
+historical data, Flatiron students have often encountered difficulty moving
+from "I understand these structures" to "I know how to work with these
+structures." Don't lose this opportunity to make sure you know how to turn your
+knowledge into _insight_.
+
 Let's get started!
 
 [bsoutbreak]: https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak
