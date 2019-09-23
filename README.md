@@ -60,15 +60,24 @@ Our efforts will be divided into two phases:
 
 ## Conclusion
 
-As we've seen in this lesson, nested data structures are a tool for
-representing complex information in a way that humans can read and that
-computers can process. Using simple tools like expressions, statements,
-methods, `Array` manipulation commands, and `Hash` manipulation commands, we
-can transform NDS' that we create or get from somewhere else in a way to produce
-insight.
+Nested data structures are tools for representing complex information in a way
+that humans can read and that computers can process. Reading them and
+processing them allows us to create _insights_ that improve our lives.
 
 The remainder of this module will train up our skill in working with NDS with
 the collaboration of a computer to produce insight.
+
+To start, we'll introduce some of the simplest nested data structures. These
+structures tend to be nested together to build complex data structures, so it's
+helpful to understand them in isolation. The four we'll be digging into in the
+next several lessons are:
+
+* `Array` of `Array`s (AoA)
+* `Array` of `Hash`es (AoH)
+* `Hash` of `Array`s (HoA)
+* `Hash` of `Hash`es (HoH)
+
+Let's get started!
 
 [bsoutbreak]: https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak
 [Moneyball]: https://grantland.com/features/the-economics-moneyball/
