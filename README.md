@@ -1,4 +1,4 @@
-## Programming as Collaboration: Nested Data Structures Introduction
+# Programming as Collaboration: Nested Data Structures Introduction
 
 Welcome to "Programming as Collaboration." In this series of lessons, we're
 going to collaborate with the computer to discover _insights_ buried in complex
@@ -6,19 +6,20 @@ nested data structures (NDS). Complex nested data structures are things like
 `Arrays` of `Arrays` of `Arrays` or `Hashes` of `Arrays` of `Hashes`.
 
 We italicized _insight_ because we want to emphasize something very important.
-There's a difference between raw data and conclusions that that data, when
-processed, can teach us. We call those conclusions we extract from data with
-programming _insights_.
+There's a difference between raw data and conclusions drawn from that data. When
+processed correctly, data can teach us many things. The conclusions we extract
+from data with programming are called _insights_.
 
 Let's take a data-into-insight example form history.  In 1854, the physician
 John Snow recorded data identifying which Londoners in and about Broad Street
-had contracted cholera. He thus had an initial data set, something very close
-to a nested data structure. Snow then tested multiple hypotheses against the
-data, but the one that fit the data best was this: cholera was being spread via
-an infected pump in the neighborhood. This event is called "In the [1854 Broad Street Cholera][bsoutbreak]."
+had contracted cholera. He thus had an initial data set, something very close to
+a nested data structure. Snow then tested multiple hypotheses against the data,
+but the one that fit the data best was this: cholera was being spread via an
+infected pump in the neighborhood. This event is called "In the
+[1854 Broad Street Cholera][bsoutbreak]."
 
-It marks the birth of epidemiology and, in truth, the discipline that would
-come to be called "data science."
+It marks the birth of epidemiology and, in truth, the discipline that would come
+to be called "data science."
 
 ## NDS into Insight
 
@@ -31,8 +32,8 @@ In the study of the cholera outbreak, we can see Snow's method:
 * Human Effort
   * "Is there a common water source for households suffering cholera death?"
   * "Do households that don't use the Broad Street water pump avoid cholera
-    death?
-  * Why do individuals who work at the nearby brewery seem immune to cholera?
+    death?"
+  * "Why do individuals who work at the nearby brewery seem immune to cholera?"
 * _Insight_: **The Broad Street pump is spreading disease! And the brewery
   workers avoid it by drinking low-alcohol beer all day!**
 
@@ -77,13 +78,13 @@ next several lessons are:
 * `Hash` of `Array`s (HoA)
 * `Hash` of `Hash`es (HoH)
 
-While you might have seen these nested data structures before, these lessons
-use more technical and more precise language to describe them. Additionally, we
+While you might have seen these nested data structures before, these lessons use
+more technical and more precise language to describe them. Additionally, we
 discuss them with focus on how we are going to process them. Based on our
-historical data, Flatiron students have often encountered difficulty moving
-from "I understand these structures" to "I know how to work with these
-structures." Don't lose this opportunity to make sure you know how to turn your
-knowledge into _insight_.
+historical data, Flatiron students have often encountered difficulty moving from
+"I understand these structures" to "I know how to work with these structures."
+Don't lose this opportunity to make sure you know how to turn your knowledge
+into _insight_.
 
 Let's get started!
 
