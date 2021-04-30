@@ -1,4 +1,6 @@
-# Programming as Collaboration: Nested Data Structures Introduction
+# Working with Nested Data Structures
+
+## Introduction
 
 Welcome to "Programming as Collaboration." In this series of lessons, we're
 going to collaborate with the computer to discover _insights_ buried in complex
